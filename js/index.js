@@ -5,7 +5,7 @@ window.onload = function () {
     var navigation = document.getElementById("navigation");
     var position = navigation.offsetTop;
 
-    //Function that makes navigation bar stick to the top of the page after scrolling down, if needed
+    //Function that makes navigation bar stick to the top of the page after scrolling down
     function addSticky() {
         if (window.pageYOffset >= position) {
             navigation.classList.add("sticky");
@@ -14,7 +14,6 @@ window.onload = function () {
         }
     }
 
-    //Calls addSticky() everytime user scrolls
     window.onscroll = function () {
         addSticky()
     };
