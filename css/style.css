@@ -28,6 +28,7 @@ h1 {
     font-size: 350%;
     font-family: Verdana;
     text-align: center;
+    cursor: pointer;
 }
 
 /*** Navigation bar ***/
@@ -83,8 +84,85 @@ main {
     height: 1500px;
 }
 
+section {
+    padding: 10px 10% 40px;
+}
+
 h2 {
     font-size: 250%;
     font-family: Verdana;
     text-align: center;
 }
+
+h3 {
+    font-size: 200%;
+    font-family: verdana;
+    text-align: center;
+}
+
+p {
+    font-size: 150%;
+    font-family: Georgia;
+    line-height: 1.25;
+}
+
+/*** Game Gallery ***/
+
+#galleryContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#gallery {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    background-color: red;
+}
+
+#galleryFunction {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#galleryEmpty {
+    width: 80%;
+}
+
+.galleryButton {
+    color: white;
+    font-family: verdana;
+    font-size: 200%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: black;
+    opacity: .3;
+    transition: opacity .2s;
+}
+
+.galleryButton:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+.galleryButton:active {
+    opacity: 1;
+}
+
+#galleryContent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*** Footer ***/
+footer {}

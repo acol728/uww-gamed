@@ -1,4 +1,4 @@
-//General functionality
+//--- General functionality ---\\
 
 //Waits for document elements to be loaded before proceeding
 window.onload = function () {

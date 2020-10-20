@@ -4,25 +4,51 @@
 <head>
     <title>Warhawk Game Gallery</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="pictures/favicon.png" type="image/x-icon">
     <script src="js/index.js"></script>
 </head>
 
 <body>
     <div id="container">
         <header>
-            <h1>Warhawk Game Gallery</h1>
+            <h1 onclick="window.location = 'index.html'">Warhawk Game Gallery</h1>
             <div id="navigation-wrapper">
                 <nav id="navigation">
-                    <a class="navigation-element unselectable" href="index.html">Featured Content</a>
-                    <a class="navigation-element unselectable" href="artwork.html">All Artwork</a>
+                    <a class="navigation-element unselectable" href="games.html">Game Gallery</a>
+                    <a class="navigation-element unselectable" href="getinvolved.html">Get Involved</a>
                     <a class="navigation-element unselectable" href="music.html">All Music</a>
                     <a class="navigation-element unselectable" href="credits.html">Credits & Biographies</a>
                 </nav>
             </div>
         </header>
         <main>
-            <h2>Featured Content</h2>
+            <section>
+                <h2>Welcome to the Game Gallery!</h2>
+                <p>&emsp;&emsp;&emsp;&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.</p>
+            </section>
+            <section style="background-color: #DDD;">
+                <h3>Featured Games</h3>
+                <div id="galleryContainer">
+                    <div id="gallery">
+                        <div id="galleryFunction">
+                            <div class="galleryButton" id="leftButton">&#60;</div>
+                            <div id="galleryEmpty"></div>
+                            <div class="galleryButton" id="rightButton">&#62;</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Who are we?</h3>
+                <p>&emsp;&emsp;&emsp;&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="pageButton">Get Involved</div>
+            </section>
         </main>
         <footer>
 
