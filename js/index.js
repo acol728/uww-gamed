@@ -15,6 +15,6 @@ window.onload = function () {
     }
 
     window.onscroll = function () {
-        addSticky()
-    };
+        addSticky();
+    }
 }
