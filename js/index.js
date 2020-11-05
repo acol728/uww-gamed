@@ -1,7 +1,7 @@
 //--- General functionality ---\\
 
 //Waits for document elements to be loaded before proceeding
-window.onload = function () {
+window.onload = () => {
     var navigation = document.getElementById("navigation");
     var position = navigation.offsetTop;
 

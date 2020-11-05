@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Warhawk Game Gallery - Browse</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/game-gallery.css" type="text/css">
+    <link rel="shortcut icon" href="pictures/favicon.png" type="image/x-icon">
+    <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1 class="unselectable" onclick="window.location = 'index.html'">Warhawk Game Gallery</h1>
+            <div id="navigation-wrapper">
+                <nav id="navigation">
+                    <a class="navigation-element unselectable navigation-active" href="gallery.html">Game Gallery</a>
+                    <a class="navigation-element unselectable" href="getinvolved.html">Get Involved</a>
+                    <a class="navigation-element unselectable" href="music.html">All Music</a>
+                    <a class="navigation-element unselectable" href="credits.html">Credits</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="game-gallery">
+                <h2 style="margin-top: 61px">Featured Games</h2>
+                <div class="card-gallery">
+                    <div class="card-button unselectable" id="card-left-button">&#60;</div>
+                    <div class="card-button unselectable" id="card-right-button">&#62;</div>
+                    <ul class="cards unselectable" id="featured-cards"></ul>
+                </div>
+                <h2>All Games</h2>
+                <div id="sort">
+                    <text id="all-sort">Sort by</text>
+                    <select id="all-dropdown">
+                        <option value="Newest">Newest</option>
+                        <option value="Oldest">Oldest</option>
+                        <option value="Alphabetical">Alphabetical (A-Z)</option>
+                        <option value="ReverseAlphabetical">Alphabetical (Z-A)</option>
+                    </select>
+                </div>
+                <ul id="all-cards"></ul>
+            </div>
+            <div id="game-display">
+
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="./js/cards.js" defer></script>
+    <script src="./js/load-gallery.js" type="module" defer></script>
+</body>
+
+</html>
