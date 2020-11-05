@@ -1,0 +1,44 @@
+.card-gallery {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.cards {
+  display: flex;
+  white-space: nowrap;
+  list-style: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-button {
+  height: 180;
+  width: 40px;
+  margin: 20px 0px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: #1d1d27;
+  opacity: 0.6;
+  z-index: 1;
+
+  /*** Font ***/
+  line-height: 180px;
+  text-align: center;
+  font-size: 200%;
+  color: white;
+}
+
+.card-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#card-left-button {
+  left: 10px;
+  visibility: hidden;
+}
+
+#card-right-button {
+  right: 10px;
+}

@@ -1,11 +1,9 @@
-//--- General functionality ---\\
+import $ from "./modules/helpers.js";
 
-//Waits for document elements to be loaded before proceeding
 window.onload = () => {
-    var navigation = document.getElementById("navigation");
+    var navigation = $("navigation");
     var position = navigation.offsetTop;
 
-    //Function that makes navigation bar stick to the top of the page after scrolling down
     function addSticky() {
         if (window.pageYOffset >= position) {
             navigation.classList.add("sticky");

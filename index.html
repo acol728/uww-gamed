@@ -3,9 +3,9 @@
 
 <head>
     <title>Warhawk Game Gallery</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="shortcut icon" href="pictures/favicon.png" type="image/x-icon">
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="shortcut icon" href="./pictures/favicon.png" type="image/x-icon">
+    <script src="./js/index.js" type="module" defer></script>
 </head>
 
 <body>
@@ -28,18 +28,15 @@
                     elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.</p>
             </section>
-            <section style="background-color: #DDD;">
-                <h3>Featured Games</h3>
-                <div id="galleryContainer">
-                    <div id="gallery">
-                        <div id="galleryFunction">
-                            <div class="galleryButton" id="leftButton">&#60;</div>
-                            <div id="galleryEmpty"></div>
-                            <div class="galleryButton" id="rightButton">&#62;</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <h2>Featured Games</h2>
+            <div class="card-gallery">
+                <div class="card-button unselectable" id="card-left-button">&#60;</div>
+                <div class="card-button unselectable" id="card-right-button">&#62;</div>
+                <ul class="cards unselectable" id="featured-cards"></ul>
+            </div>
+            <link rel="stylesheet" href="css/gallery/cards.css" type="text/css">
+            <link rel="stylesheet" href="css/gallery/featured-gallery.css" type="text/css">
+            <script src="./js/controllers/load-featured.js" type="module" defer></script>
             <section>
                 <h3>Who are we?</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

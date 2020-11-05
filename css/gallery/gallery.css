@@ -1,0 +1,9 @@
+h2 {
+  text-align: left;
+  margin-left: 60px;
+}
+
+.state {
+  position: absolute;
+  width: 100%;
+}
