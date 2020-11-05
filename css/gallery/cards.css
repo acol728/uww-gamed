@@ -1,0 +1,35 @@
+.card {
+  width: 240px;
+  margin: 20px;
+  filter: drop-shadow(3px 3px 5px #aaa);
+}
+
+.card-main {
+  display: block;
+  height: 240px;
+  width: 240px;
+  transition: filter 0.2s;
+}
+
+.card-title {
+  border-top: 3px solid #846ea1;
+  font-family: Helvetica;
+  font-size: 110%;
+  background-color: #1d1d27;
+  color: white;
+  padding: 15px;
+  transition: background-color 0.2s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .card-main {
+  filter: brightness(0.8);
+}
+
+.card:hover .card-title {
+  background-color: black;
+}
