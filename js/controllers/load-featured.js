@@ -12,12 +12,13 @@ $('card-right-button').addEventListener("click", scrollRight);
 
 let scrolls = 0;
 const INC = 280;
+const COUNT = 2;
 
 function scrollRight() {
     if (scrolls * -1 + window.innerWidth > $('featured-cards').offsetWidth - INC)
         scrolls -= INC;
     else
-        scrolls -= INC * 2;
+        scrolls -= INC * COUNT;
     $('featured-cards').style.transform = `translateX(${scrolls}px)`;
     $('card-left-button').style.visibility = 'visible';
     if (scrolls * -1 + window.innerWidth > $('featured-cards').offsetWidth)
@@ -26,7 +27,7 @@ function scrollRight() {
 
 function scrollLeft() {
     if (scrolls < 0) {
-        scrolls += INC * 2;
+        scrolls += INC * COUNT;
         if (scrolls > 0) {
             $('featured-cards').style.transform = `translateX(${0}px)`;
             scrolls = 0;
