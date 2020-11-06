@@ -4,7 +4,7 @@ export default class ReleaseDate {
     day;
 
     constructor(date) {
-        [this.day, this.month, this.year] = date.split("-");
+        [this.year, this.month, this.day] = date.split("-");
     }
 
     compare(date) {
