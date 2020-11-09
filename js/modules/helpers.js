@@ -1,3 +1,3 @@
-export default function $(el) {
-    return document.getElementById(el);
+export default function $(e) {
+    return document.getElementById(e);
 }

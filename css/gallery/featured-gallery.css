@@ -21,6 +21,7 @@
   background-color: #1d1d27;
   opacity: 0.6;
   z-index: 1;
+  cursor: pointer;
 
   /*** Font ***/
   line-height: 180px;
@@ -30,7 +31,6 @@
 }
 
 .card-button:hover {
-  cursor: pointer;
   opacity: 0.8;
 }
 

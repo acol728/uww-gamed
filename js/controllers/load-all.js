@@ -1,6 +1,6 @@
-import createCard from "../modules/create-card.js";
+import createCard from "../modules/cards/create-card.js";
 import Sort from "../modules/sort.js";
-import $ from "../modules/helpers.js"
+import $ from "../modules/helpers.js";
 
 function loadCards() {
     switch ($("all-dropdown").value) {
