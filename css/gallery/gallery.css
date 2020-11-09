@@ -1,9 +1,152 @@
-h2 {
+.state {
+  position: absolute;
+  width: 100%;
+}
+
+/*** All Gallery ***/
+
+#gallery-page h2 {
   text-align: left;
   margin-left: 60px;
 }
 
-.state {
-  position: absolute;
-  width: 100%;
+#sort {
+  margin: 25px 60px;
+}
+
+#all-sort {
+  font-size: 120%;
+  margin-right: 10px;
+}
+
+#all-dropdown {
+  font-size: 120%;
+  padding: 10px;
+}
+
+#all-cards {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+/*** Game Page ***/
+
+/*** Navigation ***/
+
+.back-bar {
+  padding: 10px;
+  padding-left: 60px;
+  font-size: 120%;
+  background-color: #846ea1;
+  opacity: 0.8;
+  color: white;
+  transition: 0.2s opacity;
+  cursor: pointer;
+}
+
+.back-bar:hover {
+  opacity: 1;
+}
+
+.sub-nav-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-nav-button {
+  padding: 15px 60px;
+  margin-left: -1px;
+  cursor: pointer;
+  background-color: #3a3a4e;
+  border-left: 6px solid #2c2c3a;
+  font-family: Georgia;
+  font-size: 120%;
+  color: white;
+  transition: 0.2s background-color;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
+
+.sub-nav-button:not(.sub-nav-active):nth-child(1) {
+  border-left: 6px solid #3a3a4e;
+}
+
+.sub-nav-button:not(.sub-nav-active):hover {
+  background-color: #2c2c3a;
+}
+
+.sub-nav-active {
+  color: #ffcb31;
+  background-color: #1d1d27;
+  border-left: 6px solid #1d1d27;
+  transition: 0.2s background-color;
+  cursor: default;
+}
+
+/*** Main content ***/
+
+.game-page-content {
+  margin: 60px 0px;
+}
+
+.split {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.half {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin: 40px;
+}
+
+/*** Video Gallery ***/
+
+.video-container {
+  height: 360px;
+  width: 640px;
+  background-color: #ddd;
+}
+
+#game-name {
+  text-align: left;
+  margin: 0;
+}
+
+#game-description {
+  text-indent: 50px;
+}
+
+.spread {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.detail {
+  font-size: 160%;
+  text-align: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  margin: 20px 40px;
+}
+
+.spread-value {
+  font-size: 80%;
+  text-align: center;
+  color: #888;
+}
+
+/*** Sub content ***/
+
+.sub-state {
+  background-color: #1d1d27;
+  padding: 20px 100px;
+}
+
+.sub-state h2 {
+  color: white;
 }

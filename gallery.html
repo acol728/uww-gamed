@@ -4,8 +4,9 @@
 <head>
     <title>Warhawk Game Gallery - Browse</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="./css/gallery/gallery.css" type="text/css">
     <link rel="stylesheet" href="css/gallery/cards.css" type="text/css">
+    <link rel="stylesheet" href="css/gallery/featured-gallery.css" type="text/css">
+    <link rel="stylesheet" href="./css/gallery/gallery.css" type="text/css">
     <link rel="shortcut icon" href="pictures/favicon.png" type="image/x-icon">
     <script src="./js/index.js" type="module" defer></script>
 </head>
@@ -24,14 +25,13 @@
             </div>
         </header>
         <main>
-            <div class="state" id="game-gallery">
+            <div class="state" id="gallery-page">
                 <h2 style="margin-top: 61px">Featured Games</h2>
                 <div class="card-gallery">
                     <div class="card-button unselectable" id="card-left-button">&#60;</div>
                     <div class="card-button unselectable" id="card-right-button">&#62;</div>
                     <ul class="cards unselectable" id="featured-cards"></ul>
                 </div>
-                <link rel="stylesheet" href="css/gallery/featured-gallery.css" type="text/css">
                 <script src="./js/controllers/load-featured.js" type="module" defer></script>
                 <h2>All Games</h2>
                 <div id="sort">
@@ -44,12 +44,50 @@
                     </select>
                 </div>
                 <ul id="all-cards"></ul>
-                <link rel="stylesheet" href="css/gallery/all-gallery.css" type="text/css">
                 <script src="./js/controllers/load-all.js" type="module" defer></script>
             </div>
-            <div class="state" id="game-display">
-                <h2 id="game-name"></h2>
+            <div class="state" id="game-page" style="display: none">
+                <div class="back-bar unselectable" id="back-button">&larr; Back</div>
+                <div class="game-page-content">
+                    <div class="split">
+                        <div class="half" style="display: flex; justify-content: center">
+                            <div class="video-container">
+                            </div>
+                        </div>
+                        <div class="half" style="min-width: 30%">
+                            <h2 id="game-name">Sample Game Title</h2>
+                            <p class="paragraph" id="game-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="spread">
+                        <div class="detail">Release date<br><span class="spread-value" id="release-date">00-00-0000</span></div>
+                        <div class="detail">External links<br><span class="spread-value" id="external-link"><a target="_blank" href="https://itch.io/">itch.io</a></span></div>
+                        <div class="detail">Price<br><span class="spread-value" id="price">$0.99</span></div>
+                    </div>
+                </div>
+                <div class="sub-nav-bar">
+                    <div class="sub-nav-button unselectable sub-nav-active" id="artwork-button">Artwork</div>
+                    <div class="sub-nav-button unselectable" id="music-button">Music</div>
+                    <div class="sub-nav-button unselectable" id="credits-button">Credits</div>
+                </div>
+                <div class="sub-state" id="artwork-sub-state">
+                    <h2 id="state-name">Artwork</h2>
+                    <ul id="artwork-list"></ul>
+                </div>
+                <div class="sub-state" id="music-sub-state" style="display: none">
+                    <h2 id="state-name">Music</h2>
+                    <ul id="music-list"></ul>
+                </div>
+                <div class="sub-state" id="credits-sub-state" style="display: none">
+                    <h2 id="state-name">Credits</h2>
+                    <ul id="credits-list"></ul>
+                </div>
             </div>
+            <script src="./js/controllers/load-state.js" type="module" defer></script>
         </main>
         <footer>
 

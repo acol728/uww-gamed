@@ -1,6 +1,6 @@
 import featured from "../data/featured.js";
-import createCard from "../modules/create-card.js";
-import $ from "../modules/helpers.js"
+import createCard from "../modules/cards/create-card.js";
+import $ from "../modules/helpers.js";
 
 featured.forEach((el) => {
     const li = createCard(document.createTextNode(el.title), "./pictures/sample.jpg");
@@ -11,7 +11,7 @@ $('card-left-button').addEventListener("click", scrollLeft);
 $('card-right-button').addEventListener("click", scrollRight);
 
 let scrolls = 0;
-const INC = 280;
+const INC = 320;
 const COUNT = 2;
 
 function scrollRight() {
