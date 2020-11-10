@@ -23,7 +23,7 @@ function createCards(gameList) {
     while (list.firstChild)
         list.removeChild(list.firstChild);
     gameList.forEach((el) => {
-        const li = createCard(document.createTextNode(el.title), "./pictures/sample.jpg");
+        const li = createCard(el.title, el.id, `./pictures/games/${el.id}/thumb.jpg`);
         $("all-cards").append(li);
     });
 }

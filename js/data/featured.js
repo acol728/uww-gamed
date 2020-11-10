@@ -1,42 +1,30 @@
 export default [
     {
-        id: 0,
-        title: "Cosmic Conflict"
-    },
-    {
-        id: 1,
-        title: "Mr. Goose"
-    },
-    {
-        id: 2,
-        title: "Project Tunnel"
-    },
-    {
-        id: 3,
-        title: "Papersaurus"
-    },
-    {
         id: 4,
-        title: "Mr. Goose"
+        title: "1st Annual Fish Golf Charity Tournament"
     },
     {
         id: 5,
-        title: "Project Tunnel"
+        title: "Castle Repair"
     },
     {
         id: 6,
-        title: "Papersaurus"
+        title: "Tandum Mechanics"
     },
     {
         id: 7,
-        title: "Mr. Goose"
+        title: "Risky Departure"
     },
     {
         id: 8,
-        title: "Project Tunnel"
+        title: "Super Cool"
     },
     {
         id: 9,
-        title: "Papersaurus"
+        title: "In Disrepair"
+    },
+    {
+        id: 10,
+        title: "Monkey Game"
     }
 ]
