@@ -41,4 +41,6 @@ function changeSubPage(type) {
         buttons[i].classList.remove("sub-nav-active");
     }
     $(type + "-button").classList.add("sub-nav-active");
+
+    $(type + "-sub-state").scrollIntoView({behavior: 'smooth'});
 }
