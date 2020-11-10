@@ -7,13 +7,12 @@
 
 .cards {
   display: flex;
-  white-space: nowrap;
   list-style: none;
   transition: transform 0.5s ease-in-out;
 }
 
 .card-button {
-  height: 180;
+  height: 180px;
   width: 40px;
   margin: 20px 0px;
   border-radius: 20px;

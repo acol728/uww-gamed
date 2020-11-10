@@ -3,7 +3,7 @@ import createCard from "../modules/cards/create-card.js";
 import $ from "../modules/helpers.js";
 
 featured.forEach((el) => {
-    const li = createCard(document.createTextNode(el.title), "./pictures/sample.jpg");
+    const li = createCard(el.title, el.id, `./pictures/games/${el.id}/thumb.jpg`);
     $("featured-cards").append(li);
 });
 

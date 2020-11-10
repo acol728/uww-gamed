@@ -1,18 +1,19 @@
 .card {
-  margin: 20px;
+  margin: 10px;
   filter: drop-shadow(3px 3px 5px #aaa);
   cursor: pointer;
 }
 
 .card-main {
   display: block;
-  height: 280px;
-  width: 280px;
+  height: 240px;
+  width: 320px;
   transition: filter 0.2s;
 }
 
 .card-title {
   border-top: 3px solid #846ea1;
+  width: 320px;
   font-family: Helvetica;
   font-size: 110%;
   background-color: #1d1d27;

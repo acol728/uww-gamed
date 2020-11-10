@@ -43,7 +43,7 @@
   background-color: #846ea1;
   opacity: 0.8;
   color: white;
-  transition: 0.2s opacity;
+  transition: opacity 0.2s;
   cursor: pointer;
 }
 
@@ -65,7 +65,7 @@
   font-family: Georgia;
   font-size: 120%;
   color: white;
-  transition: 0.2s background-color, 0.2s border-left;
+  transition: background-color 0.2s, border-left 0.2s;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -82,7 +82,7 @@
   color: #ffcb31;
   border-left: 6px solid #1d1d27;
   background-color: #1d1d27;
-  transition: 0.2s background-color;
+  transition: background-color, 0.2s;
   cursor: default;
 }
 
@@ -102,7 +102,7 @@
 .half {
   flex-basis: 0;
   flex-grow: 1;
-  margin: 0px 60px;
+  margin: 0px 80px;
 }
 
 /*** Video Gallery ***/
@@ -118,7 +118,7 @@
   margin: 0;
 }
 
-#game-description {
+.paragraph {
   text-indent: 50px;
 }
 
@@ -158,16 +158,16 @@
 #credits-list {
   list-style: none;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .credits-card {
-  align-self: center;
   flex-grow: 1;
-  padding: 10px 60px;
+  flex-basis: 0;
+  padding: 10px 100px;
+  margin: 20px 0px;
   border-left: 1px dashed #3a3a4e;
 }
 
@@ -189,4 +189,12 @@
 .credits-card .twitter {
   color: #1da1f2;
   margin-top: 0;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.credits-card .twitter:hover {
+  color: #657786;
 }
