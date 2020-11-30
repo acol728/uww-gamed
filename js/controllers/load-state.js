@@ -7,8 +7,9 @@ const gamePage = $("game-page");
 const galleryPage = $("gallery-page");
 
 function loadGame(gameID) {
-    clearData();
+    clearGameData();
     const game = games.find(el => el.id == gameID);
+    
     $("game-name").innerText = game.title;
     $("release-date").innerText = game.releaseDate;
     $("price").innerText = "$" + game.price.toFixed(2);
@@ -46,7 +47,9 @@ function loadGame(gameID) {
     $("container").scrollIntoView();
 }
 
-function clearData() {
+export default loadGame;
+
+function clearGameData() {
     while ($("game-paragraphs").firstChild)
         $("game-paragraphs").removeChild($("game-paragraphs").firstChild);
 
