@@ -1,6 +1,87 @@
+/*** General ***/
+
 .state {
   position: absolute;
   width: 100%;
+}
+
+.card {
+  margin: 10px;
+  filter: drop-shadow(3px 3px 5px #aaa);
+  cursor: pointer;
+}
+
+.card-main {
+  display: block;
+  height: 240px;
+  width: 320px;
+  transition: filter 0.2s;
+}
+
+.card-title {
+  border-top: 3px solid #846ea1;
+  width: 320px;
+  font-family: Helvetica;
+  font-size: 110%;
+  background-color: #1d1d27;
+  color: white;
+  padding: 15px;
+  transition: background-color 0.2s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+}
+
+.card:hover .card-main {
+  filter: brightness(0.8);
+}
+
+.card:hover .card-title {
+  background-color: black;
+}
+
+/*** Featured Gallery ***/
+
+.card-gallery {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.cards {
+  display: flex;
+  list-style: none;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-button {
+  height: 180px;
+  width: 40px;
+  margin: 20px 0px;
+  border-radius: 20px;
+  position: absolute;
+  background-color: #1d1d27;
+  opacity: 0.6;
+  z-index: 1;
+  cursor: pointer;
+
+  /*** Font ***/
+  line-height: 180px;
+  text-align: center;
+  font-size: 200%;
+  color: white;
+}
+
+.card-button:hover {
+  opacity: 0.8;
+}
+
+#card-left-button {
+  left: 10px;
+  visibility: hidden;
+}
+
+#card-right-button {
+  right: 10px;
 }
 
 /*** All Gallery ***/

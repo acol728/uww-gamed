@@ -177,7 +177,7 @@ export default [
         name: "Matthew Wedll",
         games: [{
             title: "Tandum Mechanics",
-            roles: ["Art", "Voic Acting", "Animation"]
+            roles: ["Art", "Voice Acting", "Animation"]
         }],
         twitter: ""
     },
